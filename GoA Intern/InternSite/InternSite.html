@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="InternSite.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello World</h1>
+    <h2>Wow! Check out all the cool CSS and Javascript things I can do!</h2>
+    <div align="center" id="imagelist">
+        <table>
+            <tr>
+                <td>
+                    <div class="circleborder">
+                        <div class="circle">
+                            <img src="GOA-Interview-Assets/surface-ZlJmOUFRBfQ-unsplash.jpg" class="imageBlock" alt="Collaboration" onclick="openLightbox();currentImage(1)">
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="rectangleborder">
+                        <div class="rectangle">
+                            <img src="GOA-Interview-Assets/sergey-pesterev-llGiAyYthDw-unsplash.jpg" class="imageBlock" alt="Mountain" onclick="openLightbox();currentImage(2)">
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="squareborder">
+                        <div class="square">
+                            <img src="GOA-Interview-Assets/lee-chinyama-6lGiNbAublo-unsplash.jpg" class="imageBlock" alt="Graduation" onclick="openLightbox();currentImage(3)"> 
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="triangleborder">
+                        <div class="triangle">
+                            <img src="GOA-Interview-Assets/simone-hutsch-8LwKILB2ceI-unsplash.jpg" class="imageBlock" alt="Building" onclick="openLightbox();currentImage(4)">
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="lightbox">
+        <div id="container" align="center">
+            <span class="close" onclick="closeLightbox()">&times;</span>
+            <div id="titleContainer">
+                <h3 id="title"></h3> 
+            </div>
+            <div class="ligtboxContents">
+                <div class="itemContainer" style="display: none;">
+                    <img src="GOA-Interview-Assets/surface-ZlJmOUFRBfQ-unsplash.jpg" class="imageThumbnail" alt="Collaboration">
+                </div>
+                <div class="itemContainer" style="display: none;">
+                    <img src="GOA-Interview-Assets/sergey-pesterev-llGiAyYthDw-unsplash.jpg" class="imageThumbnail" alt="Mountain">
+                </div>
+                <div class="itemContainer" style="display: none;">
+                    <img src="GOA-Interview-Assets/lee-chinyama-6lGiNbAublo-unsplash.jpg" class="imageThumbnail" alt="Graduation"> 
+                </div>
+                <div class="itemContainer" style="display: none;">
+                    <img src="GOA-Interview-Assets/simone-hutsch-8LwKILB2ceI-unsplash.jpg" class="imageThumbnail" alt="Building">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="InternSite.js"></script>
+</html>
